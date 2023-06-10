@@ -7,14 +7,21 @@ require_relative "../lib/student"
 steve = Student.new
 steve.first_name = "Steve"
 steve.last_name = "Jobs"
-
+malcom = Student.new
+malcom.first_name = "Malcom"
+ malcom.last_name = "Owilla"
 avi = Teacher.new
 avi.first_name = "Avi"
 avi.last_name = "Flombaum"
 
+knowledge = avi.teach
+puts malcom.learn(knowledge)
 
-some_knowledge = avi.teach 
+puts "i just leaned #{knowledge} from avi"
+# puts jim.learn
 
-steve.learn(some_knowledge)
+#  some_knowledge = avi.teach 
 
-puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+# puts steve.learn(some_knowledge)
+
+# puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
